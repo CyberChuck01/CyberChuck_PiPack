@@ -1,0 +1,7 @@
+# /etc/default/gpsd  (PiPack)
+# Listen on ALL interfaces (-G) so the ESP32-C5 dashboard can read GPS,
+# and poll without waiting for a client (-n). See docs/03-gps-gpsd.md.
+START_DAEMON="true"
+USBAUTO="true"
+DEVICES="/dev/ttyACM0"        # adjust to your GPS device
+GPSD_OPTIONS="-G -n"

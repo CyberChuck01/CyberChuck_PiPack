@@ -1,0 +1,8 @@
+# Known Flock Safety camera WiFi OUI prefixes — one per line, AA:BB:CC
+# Lines starting with # are ignored.
+#
+# !! PLACEHOLDERS — replace these with YOUR verified working list from the
+#    PiPack. OUIs get added/rotated over time, so keep this current.
+#
+# XX:XX:XX
+# YY:YY:YY

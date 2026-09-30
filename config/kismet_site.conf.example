@@ -1,0 +1,16 @@
+# Example kismet_site.conf for the PiPack.
+# Copy to kismet_site.conf (gitignored) and fill in for your box.
+
+# --- httpd / API ---
+httpd_bind_address=0.0.0.0        # reachable by the dashboard on RaspAP
+httpd_port=2501
+# Set a real admin user via the web UI on first run, then create a scoped
+# API key for the dashboard. Do NOT stay on admin/admin. See docs/02.
+
+# --- logging (ADS-B fix) ---
+log_types=kismet,pcapng,wiglecsv,adsb
+
+# --- capture sources (examples; edit interface names) ---
+# source=hci0:type=bluetooth,name=pi_bt
+# source=wlan1:type=linuxwifi,name=panda1
+# source=wlan2:type=linuxwifi,name=panda2
